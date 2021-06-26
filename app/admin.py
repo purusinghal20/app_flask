@@ -1,8 +1,9 @@
 from app import app
+from flask import render_template
 
 @app.route("/admin/dash")
 def admin_dash():
-    return "<h1> Admin dash </h1>"
+    return render_template("admin/dash.html")
 
 @app.route("/admin/profile")
 def admin_profile():
